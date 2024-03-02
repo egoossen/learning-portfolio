@@ -17,6 +17,7 @@ class NavMenu extends HTMLElement {
 							</div>
 						</li>
 						<li><a href="index.html">Contact</a></li> -->
+						<li><a href="https://elijahgoossen.wordpress.com/" target="_blank">Wordpress</a></li>
 					</ul>
 				</nav>
 			</header>
