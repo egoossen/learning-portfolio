@@ -15,6 +15,8 @@ class NavMenu extends HTMLElement {
 							<a href="javascript:void(0)" class="dropbtn">Portfolio</a>
 							<div class="dropdown-content">
 								<a href="` + newVal + `portfolio/ksp131/calvinism-and-engineering.html">Calvinism and Engineering</a>
+								<a href="` + newVal + `portfolio/ksp131/a-christian-view-of-rhetoric.html">A Christian View of Rhetoric</a>
+								<a href="` + newVal + `portfolio/ksp131/yahweh-vs-allah.html">Yahweh vs. Allah</a>
 							</div>
 						</li>
 						<!-- <li><a href="` + newVal + `index.html">Contact</a></li> -->
