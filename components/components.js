@@ -9,8 +9,8 @@ class NavMenu extends HTMLElement {
 				<nav>
 					<ul>
 						<li><a href="index.html">About Me</a></li>
-						<!-- <li><a href="index.html">Why KSP?</a></li>
-						<li class="dropdown">
+						<li><a href="why-ksp.html">Why KSP?</a></li>
+						<!-- <li class="dropdown">
 							<a href="javascript:void(0)" class="dropbtn">Portfolio</a>
 							<div class="dropdown-content">
 								<a href="index.html">Introduction to Rhetoric and Christian Scholarship</a>
