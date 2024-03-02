@@ -3,25 +3,26 @@ class NavMenu extends HTMLElement {
 		super();
 	}
 
-	connectedCallback() {
-		this.innerHTML = `
+	static get observedAttributes () { return ["root-dir"]; }
+	attributeChangedCallback (name, oldVal, newVal) {
+		if (name=="root-dir") { this.innerHTML = `
 			<header>
 				<nav>
 					<ul>
-						<li><a href="index.html">About Me</a></li>
-						<li><a href="why-ksp.html">Why KSP?</a></li>
-						<!-- <li class="dropdown">
+						<li><a href="` + newVal + `index.html">About Me</a></li>
+						<li><a href="` + newVal + `why-ksp.html">Why KSP?</a></li>
+						<li class="dropdown">
 							<a href="javascript:void(0)" class="dropbtn">Portfolio</a>
 							<div class="dropdown-content">
-								<a href="index.html">Introduction to Rhetoric and Christian Scholarship</a>
+								<a href="` + newVal + `portfolio/ksp131/calvinism-and-engineering.html">Calvinism and Engineering</a>
 							</div>
 						</li>
-						<li><a href="index.html">Contact</a></li> -->
+						<!-- <li><a href="` + newVal + `index.html">Contact</a></li> -->
 						<li><a href="https://elijahgoossen.wordpress.com/" target="_blank">Wordpress</a></li>
 					</ul>
 				</nav>
 			</header>
-		`;
+		`;}
 	}
 }
 
